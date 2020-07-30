@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>cruise_control</name>
+  <version>0.0.1</version>
+  <description>Sample Cruise Control Application</description>
+  <maintainer email="kunakhuntia09@gmail.com">Nihar Khuntia</maintainer>
+  <license>open</license>
+  <author>Nihar Khuntia</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rclcpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>input/file.csv</exec_depend>
+  <exec_depend>input/start.conf</exec_depend>
+
+  <test_depend>launch_testing</test_depend>
+  <test_depend>launch_testing_ros</test_depend>
+  <test_depend>launch_testing_ament_cmake</test_depend>
+  <test_depend>rmw_implementation_cmake</test_depend>  
+  <test_depend>rosunit</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
